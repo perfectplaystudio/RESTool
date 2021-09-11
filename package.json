@@ -17,7 +17,7 @@
     "react-infinite-scroll-component": "^5.0.4",
     "react-loading-skeleton": "^2.0.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.0",
+    "react-scripts": "3.4.1",
     "react-toastify": "^5.4.1",
     "typescript": "^3.7.4"
   },
