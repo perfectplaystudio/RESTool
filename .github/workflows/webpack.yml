@@ -27,3 +27,5 @@ jobs:
         npm install
         npm i
         npx webpack
+      env:
+        CI: false
