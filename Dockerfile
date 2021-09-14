@@ -8,7 +8,7 @@ COPY package-lock.json .
 COPY tsconfig.json .
 COPY --chown=node:node ./src ./src
 COPY --chown=node:node ./public ./public
-RUN npm i --only=prod && npm rebuild node-sass && npm audit fix
+RUN npm i --only=prod && npm rebuild node-sass && npm audit fix --force
 EXPOSE 3000
 #ENTRYPOINT ["npm", "start"]
 CMD cp /tmp/config.json ./public/config.json && npm start
