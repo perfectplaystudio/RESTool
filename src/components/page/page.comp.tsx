@@ -409,7 +409,7 @@ const PageComp = ({ context }: IProps) => {
       remove(updatedParams, param => ['page', 'limit'].includes(param.name));
       updatedParams = buildInitQueryParamsAndPaginationState(updatedParams, paginationConfig).initQueryParams;
     }
-
+    // eslint-disable-next-line
     updatedParams.map((queryParam, idx) => {
         if (queryParam.type === 'select' && queryParam.value === '-- Select --') {
             // default value means nothing was selected and thus we explicitly
